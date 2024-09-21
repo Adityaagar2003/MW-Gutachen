@@ -1271,12 +1271,9 @@ body {
   background-color: #fff;
   z-index: 1000;
 }
-
-.logo img {
-  width: 200px;
-  height: 200px;
-
-  
+  .logo img {
+    width: 230px;
+    height: 251px;
 }
 
 
