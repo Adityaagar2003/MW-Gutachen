@@ -927,7 +927,10 @@ body {
 
   .header { padding-block: 25px; }
 
-  .logo img { width: 128px; }
+.logo img {
+    width: 230px;
+    height: 251px;
+}
 
   .header .btn {
     font-size: unset;
