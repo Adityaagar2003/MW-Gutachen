@@ -1,25 +1,5 @@
-'use strict';
 
 
-
-/**
- * MOBILE NAVBAR TOGGLE
- */
-
-const navbar = document.querySelector("[data-navbar]");
-const navToggler = document.querySelector("[data-nav-toggler]");
-
-navToggler.addEventListener("click", function () {
-  navbar.classList.toggle("active");
-  this.classList.toggle("active");
-});
-
-
-document.getElementById('menu-toggle').addEventListener('click', function() {
-  const navLinks = document.getElementById('nav-links');
-  this.classList.toggle('active');
-  navLinks.classList.toggle('active');
-});
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -31,3 +11,43 @@ document.addEventListener("DOMContentLoaded", function () {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
 });
+
+
+
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+
+
+  document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+      const faqItem = question.parentElement;
+
+      // Close all other open FAQ items
+      document.querySelectorAll('.faq-item').forEach(item => {
+        if (item !== faqItem) {
+          item.classList.remove('active');
+          item.querySelector('.faq-answer').style.maxHeight = null;
+          item.querySelector('.faq-toggle').textContent = '+';
+        }
+      });
+
+      // Toggle the clicked FAQ item
+      faqItem.classList.toggle('active');
+
+      const faqAnswer = faqItem.querySelector('.faq-answer');
+      const faqToggle = faqItem.querySelector('.faq-toggle');
+
+      if (faqItem.classList.contains('active')) {
+        faqAnswer.style.maxHeight = faqAnswer.scrollHeight + 'px';
+        faqToggle.textContent = '-';
+      } else {
+        faqAnswer.style.maxHeight = null;
+        faqToggle.textContent = '+';
+      }
+    });
+  });
