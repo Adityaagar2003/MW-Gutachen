@@ -49,7 +49,6 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
@@ -57,85 +56,37 @@
 
 
 
-  <!-- 
-    - #HEADER
-  -->
-
-  <!-- <header class="header">
-    <div class="container">
-
-      <a href="#" class="logo">
-        <img src="./assets/images/logo.png" width="128" height="63" alt="autofix home">
-      </a>
-
-      <!-- <nav class="navbar" data-navbar>
-        <ul class="navbar-list">
-
-          <li>
-            <a href="#" class="navbar-link">Home</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">About</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">Services</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">Projects</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">Contact</a>
-          </li>
-
-        </ul>
-      </nav> -->
-
-      <!-- <a href="#" class="btn btn-primary">
-        <span class="span">Get a Quote</span>
-
-        <span class="material-symbols-rounded">arrow_forward</span>
-      </a>
-
-      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
-        <span class="nav-toggle-icon icon-1"></span>
-        <span class="nav-toggle-icon icon-2"></span>
-        <span class="nav-toggle-icon icon-3"></span>
-      </button>
-
-    </div>
-  </header> -->
-
-
-
   <header>
     <nav class="navbar">
-        <div class="logo">
-            <a href="index.html"> <img src="logorem.png"alt="Logo">
+      <div class="logo-phone-container">
+        <a href="index.html" class="logo">
+          <img src="logorem.png" alt="Logo">
+        </a>
+        <div class="phone">
+          <a href="tel:+6267200999">
+            <i class="fa-solid fa-phone"></i> 0/62/7200999
+          </a>
         </div>
-        <div class="menu-toggle" id="menu-toggle">
-            <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="all">
+        <div class="container">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#hero">Hero</a></li>
+            <li><a href="service.html">Our Services</a></li>
+            <li><a href="#references">References</a></li>
+            <li><a href="#abu">About Us</a></li>
+            <li><a href="#whyo">Why Us?</a></li>
+            <li><a href="#cont">Contact Us</a></li>
+            <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+          </ul>
         </div>
-        <div class="all">
-            <div class="container">
-                <ul class="nav-links" id="nav-links">
-                    <li><a href="#hero">Hero</a></li>
-                    <li><a href="service.html">Our Services</a></li>
-                    <li><a href="#references">References</a></li>
-                    <li><a href="#abu">About Us</a></li>
-                    <li><a href="#whyo">Why Us?</a></li>
-                    <li><a href="#cont">Contact Us</a></li>
-                    <li><a href=""><i class="fa-solid fa-phone"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
-                </ul>
-            </div>
-        </div>
+      </div>
     </nav>
-</header>
-
+  </header>
+  
 
 
 
@@ -160,7 +111,7 @@
               proident.
             </p>
 
-            <a href="#" class="btn">
+            <a href="service.html" class="btn">
               <span class="span">Our Services</span>
 
               <span class="material-symbols-rounded">arrow_forward</span>
@@ -441,7 +392,7 @@
 
         <a href="service.html">
 
-        <a>
+        <a href="service.html">
 
           <button class="explore">
             Explore our Services
@@ -541,100 +492,134 @@
 
         </div>
       </section>
-
-
-
-
-
-      <section class="faq-section  has-bg-image" aria-labelledby="service-label"
-      style="background-image: url('./assets/images/service-bg.jpg')" id="faQ">
-        <div class="container">
-          <div class="faq-title text-center" >
-      
+   
     
-              <p class="section-subtitle :light" id="service-label">Frequently Asked Questions</p>
-           
+        
+    
+  <section class="faq-section">
+    <div class="faq-container">
+      <h2>Frequently Asked Questions</h2>
 
-              <section class="faq-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 offset-md-3">
-                            <div class="faq-title text-center pb-3">
-                                <h2>FAQ</h2>
-                            </div>
-                        </div>
-                        <div class="col-md-6 offset-md-3">
-                            <div class="faq" id="accordion">
-                                <div class="card">
-                                    <div class="card-header" id="faqHeading-1">
-                                        <div class="mb-0">
-                                            <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1" aria-expanded="true" aria-controls="faqCollapse-1">
-                                                <span class="badge">1</span>What is Lorem Ipsum?
-                                            </h5>
-                                        </div>
-                                    </div>
-                                    <div id="faqCollapse-1" class="collapse" aria-labelledby="faqHeading-1" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="faqHeading-2">
-                                        <div class="mb-0">
-                                            <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-2" aria-expanded="false" aria-controls="faqCollapse-2">
-                                                <span class="badge">2</span> Where does it come from?
-                                            </h5>
-                                        </div>
-                                    </div>
-                                    <div id="faqCollapse-2" class="collapse" aria-labelledby="faqHeading-2" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Add more FAQ items here as needed -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-           
-          </section>
-            <section class="section service has-bg-image" aria-labelledby="service-label"
+      <div class="faq-item">
+        <div class="faq-question" id="faq1">
+          <h3>What services do you offer?</h3>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>We offer a wide range of services including web development, mobile app development, and digital marketing.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" id="faq2">
+          <h3>How can I contact support?</h3>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>You can contact support via email or phone. Our support team is available 24/7 to assist you.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" id="faq3">
+          <h3>What are your pricing options?</h3>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>We offer flexible pricing options based on your project needs. Please contact us for a detailed quote.</p>
+        </div>
+      </div>
+      
+      <!-- Add more FAQ items here -->
+
+    </div>
+  </section>
+        
+          
+          <section class="section service has-bg-image" aria-labelledby="service-label"
             style="background-image: url('./assets/images/service-bg.jpg')">
             <div class="container">
           
-              <p class="section-subtitle :light" id="service-label">Get In Touch</p>
-              <h2 class="h2 section-title">Contact US</h2>
-          
-              <div id="mapconn">
-                <!-- Map Container -->
-                <div id="map"></div>
-          
-                <!-- Contact Form -->
-                <div class="contact-form">
-                  <div class="heading">Contact Us</div>
-                  <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" required="">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required="">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required=""></textarea>
-                    <button type="submit">Submit</button>
-                  </form>
+              <p class="section-subtitle :light" id="service-label">Contact Us</p>
+            </div>
+         </section>
+          <div class="contact_us_6">
+            <div class="responsive-container-block container">
+              <form class="form-box">
+                <div class="container-block form-wrapper">
+                  <div class="mob-text">
+                    <p class="text-blk contactus-head" style="color: black;">
+                      Get in Touch
+                    </p>
+                    <p class="text-blk contactus-subhead">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis diam lectus sapien.
+                    </p>
+                  </div>
+                  <div class="responsive-container-block" id="i2cbk">
+                    <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i10mt-3">
+                      <p class="text-blk input-title">
+                        FIRST NAME
+                      </p>
+                      <input class="input" id="ijowk-3" name="FirstName" placeholder="Please enter first name...">
+                    </div>
+                    <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="ip1yp">
+                      <p class="text-blk input-title">
+                        EMAIL
+                      </p>
+                      <input class="input" id="ipmgh-3" name="Email" placeholder="Please enter email...">
+                    </div>
+                    <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="ih9wi">
+                      <p class="text-blk input-title">
+                        PHONE NUMBER
+                      </p>
+                      <input class="input" id="imgis-3" name="PhoneNumber" placeholder="Please enter phone number...">
+                    </div>
+                    <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-3">
+                      <p class="text-blk input-title">
+                        WHAT DO YOU HAVE IN MIND ?
+                      </p>
+                      <textarea class="textinput" id="i5vyy-3" placeholder="Please enter query..."></textarea>
+                    </div>
+                  </div>
+                  <button class="submit-btn" id="w-c-s-bgc_p-1-dm-id-2">
+                    Submit
+                  </button>
+                </div>
+              </form>
+              <div class="responsive-cell-block wk-desk-7 wk-ipadp-12 wk-tab-12 wk-mobile-12" id="i772w">
+                <div class="map-part">
+                  <p class="text-blk map-contactus-head" id="w-c-s-fc_p-1-dm-id">
+                    Reach us at
+                  </p>
+                  <p class="text-blk map-contactus-subhead">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis diam lectus sapien.
+                  </p>
+                  <div class="social-media-links mob">
+                    <a class="social-icon-link" href="#" id="ix94i-2-2">
+                      <img class="link-img image-block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0kjaONjjrmtiuTrcZ79mtTH9-9LApvIqbsQ&s">
+                    </a>
+                    <a class="social-icon-link" href="#" id="itixd">
+                      <img class="link-img image-block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTffq39GgGif82ekiBZwEpS6cu-tD1zBwmrw&s">
+                    </a>
+                    <a class="social-icon-link" href="#" id="izxvt">
+                      <img class="link-img image-block" src="https://img.icons8.com/androidL/512/FA5252/google-logo.png">
+                    </a>
+                    <a class="social-icon-link" href="#" id="izldf-2-2">
+                      <img class="link-img image-block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6lqbTr9xyLNaeOx9pPSK0HbMFWGUcogyspg&s">
+                    </a>
+                  </div>
+                  <div class="map-box container-block">
+                  </div>
                 </div>
               </div>
-          
             </div>
-          </section>
-        
-
+          </div>
+       
     </article>
   </main>
 
 
+  
 
 
    
@@ -709,11 +694,13 @@
   </script>
   
 
-
-
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
   <script src="./assets/js/script.js"></script>
-
+  
 </body>
 
 </html>
