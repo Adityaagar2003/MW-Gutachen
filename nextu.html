@@ -35,13 +35,13 @@
   <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="style.css">
 
   <!-- 
     - preload images
   -->
   <link rel="preload" as="image" href="./assets/images/hero-banner.png">
-  <link rel="preload" as="image" href="./assets/images/hero car in.png.png">
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
@@ -56,37 +56,32 @@
 
 
 
+
   <header>
     <nav class="navbar">
-      <div class="logo-phone-container">
-        <a href="index.html" class="logo">
-          <img src="logorem.png" alt="Logo">
-        </a>
-        <div class="phone">
-          <a href="tel:+6267200999">
-            <i class="fa-solid fa-phone"></i> 0/62/7200999
-          </a>
+        <div class="logo">
+            <a href="index.html"> <img src="logorem.png"alt="Logo">
         </div>
-      </div>
-      <div class="menu-toggle" id="menu-toggle">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-      <div class="all">
-        <div class="container">
-          <ul class="nav-links" id="nav-links">
-            <li><a href="#hero">Hero</a></li>
-            <li><a href="service.html">Our Services</a></li>
-            <li><a href="#references">References</a></li>
-            <li><a href="#abu">About Us</a></li>
-            <li><a href="#whyo">Why Us?</a></li>
-            <li><a href="#cont">Contact Us</a></li>
-            <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
-          </ul>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
         </div>
-      </div>
+        <div class="all">
+            <div class="container">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#hero">Hero</a></li>
+                    <li><a href="service.html">Our Services</a></li>
+                    <li><a href="#references">References</a></li>
+                    <li><a href="#abu">About Us</a></li>
+                    <li><a href="#whyo">Why Us?</a></li>
+                    <li><a href="#cont">Contact Us</a></li>
+                    <li><a href=""><i class="fa-solid fa-phone"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-  </header>
-  
+</header>
+
 
 
 
@@ -97,14 +92,14 @@
         - #HERO
       -->
 
-      <section id="hero" class="hero has-bg-image" aria-label="home" style="background-image: url(logorem.png);">
+      <section id="hero" class="hero has-bg-image" aria-label="home" style="background-image: url('./assets/images/hero-bg.jpg')">
         <div class="container">
 
-          <div class="hero-content" style="display: none;">
+          <div class="hero-content">
 
-            <p class="section-subtitle :light">We have talented engineers & mechanics</p>
+            <p class="section-subtitle :dark">We have talented engineers & mechanics</p>
 
-            <h1 class="h1 section-title " style="color: black;">Vehicals Report  Service</h1>
+            <h1 class="h1 section-title">Vehicals Report  Service</h1>
 
             <p class="section-text">
               Duis aute irure dolor in reprehenderit in voluptate velit esse Excepteur sint occaecat cupidatat non
@@ -120,7 +115,8 @@
           </div>
 
           <figure class="hero-banner" style="--width: 1228; --height: 789;">
-           
+            <img src="./assets/images/hero-banner.png" width="1228" height="789" alt="red motor vehicle"
+              class="move-anim">
           </figure>
 
         </div>
@@ -151,13 +147,13 @@
                   <img src="./assets/images/services-1.png" width="110" height="110" loading="lazy" alt="Engine Repair">
                 </figure>
 
-                <h3 class="h3 card-title">Schadengutachtenr</h3>
+                <h3 class="h3 card-title">Engine Repair</h3>
 
                 <p class="card-text">
                   Autem velaum iure reare aenderit rui in ea roluptate esse ruam moles
                 </p>
 
-                <a href="SWKR.html" class="btn-link">Read more</a>
+                <a href="#" class="btn-link">Read more</a>
 
               </div>
             </li>
@@ -169,13 +165,13 @@
                   <img src="./assets/images/services-2.png" width="110" height="110" loading="lazy" alt="Brake Repair">
                 </figure>
 
-                <h3 class="h3 card-title">Referenzen</h3>
+                <h3 class="h3 card-title">Brake Repair</h3>
 
                 <p class="card-text">
                   Autem velaum iure reare aenderit rui in ea roluptate esse ruam moles
                 </p>
 
-                <a href="uberRef.html" class="btn-link">Read more</a>
+                <a href="#" class="btn-link">Read more</a>
 
               </div>
             </li>
@@ -187,13 +183,13 @@
                   <img src="./assets/images/services-3.png" width="110" height="110" loading="lazy" alt="Tire Repair">
                 </figure>
 
-                <h3 class="h3 card-title">Impressum</h3>
+                <h3 class="h3 card-title">Tire Repair</h3>
 
                 <p class="card-text">
                   Autem velaum iure reare aenderit rui in ea roluptate esse ruam moles
                 </p>
 
-                <a href="impDate.html" class="btn-link">Read more</a>
+                <a href="#" class="btn-link">Read more</a>
 
               </div>
             </li>
@@ -206,13 +202,13 @@
                     alt="Battery Repair">
                 </figure>
 
-                <h3 class="h3 card-title">UberMich</h3>
+                <h3 class="h3 card-title">Battery Repair</h3>
 
                 <p class="card-text">
                   Autem velaum iure reare aenderit rui in ea roluptate esse ruam moles
                 </p>
 
-                <a href="uberRef.html" class="btn-link">Read more</a>
+                <a href="#" class="btn-link">Read more</a>
 
               </div>
             </li>
@@ -230,13 +226,13 @@
                     alt="Steering Repair">
                 </figure>
 
-                <h3 class="h3 card-title">Reparaturbestatigung</h3>
+                <h3 class="h3 card-title">Steering Repair</h3>
 
                 <p class="card-text">
                   Autem velaum iure reare aenderit rui in ea roluptate esse ruam moles
                 </p>
 
-                <a href="SWKR.html" class="btn-link">Read more</a>
+                <a href="#" class="btn-link">Read more</a>
 
               </div>
             </li>
@@ -491,165 +487,92 @@
 
         </div>
       </section>
-   
+
+
+
+
+
+      <section class="faq-section  has-bg-image" aria-labelledby="service-label"
+      style="background-image: url('./assets/images/service-bg.jpg')" id="faQ">
+        <div class="container">
+          <div class="faq-title text-center" >
+      
     
-        
-      <p class="section-subtitle :light" id="Faq-label">Frequently Asked Questions</p>
-  <section class="faq-section">
-    <div class="faq-container">
+              <p class="section-subtitle :light" id="service-label">Frequently Asked Questions</p>
 
-      <div class="faq-item">
-        <div class="faq-question" id="faq1">
-          <h3>What services do you offer?</h3>
-          <span class="faq-toggle">+</span>
-        </div>
-        <div class="faq-answer">
-          <p>We offer a wide range of services including web development, mobile app development, and digital marketing.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-question" id="faq2">
-          <h3>How can I contact support?</h3>
-          <span class="faq-toggle">+</span>
-        </div>
-        <div class="faq-answer">
-          <p>You can contact support via email or phone. Our support team is available 24/7 to assist you.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-question" id="faq3">
-          <h3>What are your pricing options?</h3>
-          <span class="faq-toggle">+</span>
-        </div>
-        <div class="faq-answer">
-          <p>We offer flexible pricing options based on your project needs. Please contact us for a detailed quote.</p>
-        </div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question" id="faq3">
-          <h3>What are your pricing options?</h3>
-          <span class="faq-toggle">+</span>
-        </div>
-        <div class="faq-answer">
-          <p>We offer flexible pricing options based on your project needs. Please contact us for a detailed quote.</p>
-        </div>
-      </div> <div class="faq-item"> <div class="faq-item">
-        <div class="faq-question" id="faq3">
-          <h3>What are your pricing options?</h3>
-          <span class="faq-toggle">+</span>
-        </div>
-        <div class="faq-answer">
-          <p>We offer flexible pricing options based on your project needs. Please contact us for a detailed quote.</p>
-        </div>
-      </div> <div class="faq-item">
-        <div class="faq-question" id="faq3">
-          <h3>What are your pricing options?</h3>
-          <span class="faq-toggle">+</span>
-        </div>
-        <div class="faq-answer">
-          <p>We offer flexible pricing options based on your project needs. Please contact us for a detailed quote.</p>
-        </div>
-      </div>
-        <div class="faq-question" id="faq3">
-          <h3>What are your pricing options?</h3>
-          <span class="faq-toggle">+</span>
-        </div>
-        <div class="faq-answer">
-          <p>We offer flexible pricing options based on your project needs. Please contact us for a detailed quote.</p>
-        </div>
-      </div>
-      <!-- Add more FAQ items here -->
-
-    </div>
-  </section>
-        
+     
+              <section class="faq-section" aria-labelledby="service-label" id="faQ">
+                <div class="faq-container">
+                  <div class="faq-title">
+                    <p class="section-subtitle">Frequently Asked Questions</p>
+                  </div>
+              
+                  <div class="faq-content">
+                    <div class="faq-item">
+                      <div class="faq-header" id="faqHeading-1">
+                        <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1" aria-expanded="true" aria-controls="faqCollapse-1">
+                          <span class="badge">1</span>What is Lorem Ipsum?
+                        </h5>
+                      </div>
+                      <div id="faqCollapse-1" class="collapse-content">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                      </div>
+                    </div>
+              
+                    <div class="faq-item">
+                      <div class="faq-header" id="faqHeading-2">
+                        <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-2" aria-expanded="false" aria-controls="faqCollapse-2">
+                          <span class="badge">2</span>Where does it come from?
+                        </h5>
+                      </div>
+                      <div id="faqCollapse-2" class="collapse-content">
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+           
+          </section>
+          
+          
           
           <section class="section service has-bg-image" aria-labelledby="service-label"
             style="background-image: url('./assets/images/service-bg.jpg')">
             <div class="container">
           
-              <p class="section-subtitle :light" id="service-label">Contact Us</p>
-            </div>
-         </section>
-          <div class="contact_us_6">
-            <div class="responsive-container-block container">
-              <form class="form-box">
-                <div class="container-block form-wrapper">
-                  <div class="mob-text">
-                    <p class="text-blk contactus-head" style="color: black;">
-                      Get in Touch
-                    </p>
-                    <p class="text-blk contactus-subhead">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis diam lectus sapien.
-                    </p>
-                  </div>
-                  <div class="responsive-container-block" id="i2cbk">
-                    <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i10mt-3">
-                      <p class="text-blk input-title">
-                        FIRST NAME
-                      </p>
-                      <input class="input" id="ijowk-3" name="FirstName" placeholder="Please enter first name...">
-                    </div>
-                    <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="ip1yp">
-                      <p class="text-blk input-title">
-                        EMAIL
-                      </p>
-                      <input class="input" id="ipmgh-3" name="Email" placeholder="Please enter email...">
-                    </div>
-                    <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="ih9wi">
-                      <p class="text-blk input-title">
-                        PHONE NUMBER
-                      </p>
-                      <input class="input" id="imgis-3" name="PhoneNumber" placeholder="Please enter phone number...">
-                    </div>
-                    <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-3">
-                      <p class="text-blk input-title">
-                        WHAT DO YOU HAVE IN MIND ?
-                      </p>
-                      <textarea class="textinput" id="i5vyy-3" placeholder="Please enter query..."></textarea>
-                    </div>
-                  </div>
-                  <button class="submit-btn" id="w-c-s-bgc_p-1-dm-id-2">
-                    Submit
-                  </button>
-                </div>
-              </form>
-              <div class="responsive-cell-block wk-desk-7 wk-ipadp-12 wk-tab-12 wk-mobile-12" id="i772w">
-                <div class="map-part">
-                  <p class="text-blk map-contactus-head" id="w-c-s-fc_p-1-dm-id">
-                    Reach us at
-                  </p>
-                  <p class="text-blk map-contactus-subhead">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis diam lectus sapien.
-                  </p>
-                  <div class="social-media-links mob">
-                    <a class="social-icon-link" href="#" id="ix94i-2-2">
-                      <img class="link-img image-block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0kjaONjjrmtiuTrcZ79mtTH9-9LApvIqbsQ&s">
-                    </a>
-                    <a class="social-icon-link" href="#" id="itixd">
-                      <img class="link-img image-block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTffq39GgGif82ekiBZwEpS6cu-tD1zBwmrw&s">
-                    </a>
-                    <a class="social-icon-link" href="#" id="izxvt">
-                      <img class="link-img image-block" src="https://img.icons8.com/androidL/512/FA5252/google-logo.png">
-                    </a>
-                    <a class="social-icon-link" href="#" id="izldf-2-2">
-                      <img class="link-img image-block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6lqbTr9xyLNaeOx9pPSK0HbMFWGUcogyspg&s">
-                    </a>
-                  </div>
-                  <div class="map-box container-block">
-                  </div>
+              <p class="section-subtitle :light" id="service-label">Get In Touch</p>
+              <h2 class="h2 section-title">Contact US</h2>
+          
+              <div id="mapconn">
+                <!-- Map Container -->
+                <div id="map"></div>
+          
+                <!-- Contact Form -->
+                <div class="contact-form">
+                  <div class="heading">Contact Us</div>
+                  <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required="">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required="">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required=""></textarea>
+                    <button type="submit">Submit</button>
+                  </form>
                 </div>
               </div>
+          
             </div>
-          </div>
-       
+          </section>
+        
+
+
+
     </article>
   </main>
 
 
-  
 
 
    
@@ -729,7 +652,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
-  <script src="./assets/js/script.js"></script>
+  <script src="script.js"></script>
   
 </body>
 
