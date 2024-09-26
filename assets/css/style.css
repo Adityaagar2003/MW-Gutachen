@@ -332,7 +332,7 @@ body {
 .hero .section-subtitle { text-transform: unset; }
 
 .hero .section-text {
-  color: var(--white);
+  color: black;
   margin-block: 14px 18px;
 }
 
@@ -344,7 +344,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 90%;
+  width: 60%;
   z-index: -1;
 }
 
@@ -801,7 +801,7 @@ body {
 
   .hero .section-title { text-align: left; }
 
-  .hero-banner img { width: 55%; }
+  .hero-banner img { width: 35%; }
 
 
 
@@ -953,7 +953,7 @@ body {
     padding-inline-end: 120px;
   }
 
-  .hero-banner img { width: 70%; }
+  .hero-banner img { width: 30%; }
 
 
 
@@ -1090,7 +1090,7 @@ body {
 
   .hero .section-text { padding-inline-end: 90px; }
 
-  .hero-banner img { width: 75%; }
+  .hero-banner img { width: 50%; }
 
 
 
@@ -1378,6 +1378,31 @@ body {
     margin-bottom: 10px; /* Space between menu items in mobile */
   }
 }
+
+
+
+.logo-phone-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.phone {
+  font-size: 18px;
+  margin-left: 20px; /* Adds space between the logo and the phone number */
+}
+
+.phone a {
+  text-decoration: none;
+  color: black;
+}
+
+.phone i {
+  margin-right: 10px; /* Adds some space between the phone icon and the number */
+}
+
 
 
 
@@ -3037,39 +3062,18 @@ textarea {
 
 
 
-.logo-phone-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-
-
-.phone {
-  font-size: 18px;
-  margin-left: 20px; /* Adds space between the logo and the phone number */
-}
-
-.phone a {
-  text-decoration: none;
-  color: black;
-}
-
-.phone i {
-  margin-right: 10px; /* Adds some space between the phone icon and the number */
-}
-
-
-
 .faq-section {
   background-color: #ffffff; /* White background */
   padding: 40px;
+  margin-top: -30px;
 }
 
 .faq-container {
-  max-width: 800px;
+  max-width: 85%;
   margin: 0 auto;
   text-align: center;
+  padding: 35px;
+  
 }
 
 .faq-container h2 {
@@ -3101,7 +3105,7 @@ textarea {
 
 .faq-question h3 {
   color: #000; /* Black text for question */
-  font-size: 1.3rem;
+  font-size: 2.3rem;
   margin: 0;
   text-align: left;
 }
@@ -3124,7 +3128,7 @@ textarea {
 
 .faq-answer p {
   color: #333; /* Dark grey for answer text */
-  font-size: 1rem;
+  font-size: 1.9rem;
   margin: 0;
   padding: 15px 0;
 }
